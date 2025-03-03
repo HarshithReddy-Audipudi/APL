@@ -53,7 +53,7 @@ project = hopsworks.login(
     project=config.HOPSWORKS_PROJECT_NAME, api_key_value=config.HOPSWORKS_API_KEY
 )
 logger.info("Connected to Hopsworks project.")
-
+print(ts_data)
 # Step 6: Connect to the feature store
 logger.info("Connecting to the feature store...")
 feature_store = project.get_feature_store()
